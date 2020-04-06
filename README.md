@@ -16,7 +16,7 @@ The inspiration for this package was -, [Brotzka/laravel-dotenv-editor](https://
 
 1. Install package
     ```bash
-    composer require geo-sot/laravel-env-editor
+    composer require ijagjeet/laravel-env-editor
     ```
 2. Edit config/app.php (*Skip this step if you are using laravel 5.5+*)
     Service provider:
