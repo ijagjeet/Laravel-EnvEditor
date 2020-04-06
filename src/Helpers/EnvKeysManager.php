@@ -51,7 +51,8 @@ class EnvKeysManager
      */
     public function getKey(string $key, $default = null)
     {
-        return $this->getEnvData()->get($key, $default);
+        $data = $this->getEnvData()->where('key', $key)->first();
+        return isset($data['value']) ? $data['value']: $default;
     }
 
     /**
